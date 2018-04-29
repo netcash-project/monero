@@ -40,8 +40,8 @@
 #include <boost/filesystem.hpp>
 #include <boost/regex.hpp>
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "WalletAPI"
+#undef NETCASH_DEFAULT_LOG_CATEGORY
+#define NETCASH_DEFAULT_LOG_CATEGORY "WalletAPI"
 
 namespace epee {
     unsigned int g_test_dbg_lock_sleep = 0;
@@ -56,7 +56,7 @@ namespace {
     }
 }
 
-namespace Monero {
+namespace Netcash {
 
 Wallet *WalletManagerImpl::createWallet(const std::string &path, const std::string &password,
                                     const std::string &language, NetworkType nettype)
@@ -321,7 +321,7 @@ std::tuple<bool, std::string, std::string, std::string, std::string> WalletManag
     if (!tools::check_updates(software, buildtag, version, hash))
       return std::make_tuple(false, "", "", "", "");
 
-    if (tools::vercmp(version.c_str(), MONERO_VERSION) > 0)
+    if (tools::vercmp(version.c_str(), NETCASH_VERSION) > 0)
     {
       std::string user_url = tools::get_update_url(software, subdir, buildtag, version, true);
       std::string auto_url = tools::get_update_url(software, subdir, buildtag, version, false);
@@ -358,5 +358,3 @@ void WalletManagerFactory::setLogCategories(const std::string &categories)
 
 
 }
-
-namespace Bitmonero = Monero;

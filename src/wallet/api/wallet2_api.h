@@ -39,7 +39,7 @@
 #include <iostream>
 
 //  Public interface for libwallet library
-namespace Monero {
+namespace Netcash {
 
 enum NetworkType : uint8_t {
     MAINNET = 0,
@@ -1011,6 +1011,3 @@ struct WalletManagerFactory
 
 
 }
-
-namespace Bitmonero = Monero;
-

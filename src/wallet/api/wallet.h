@@ -40,7 +40,7 @@
 #include <boost/thread/condition_variable.hpp>
 
 
-namespace Monero {
+namespace Netcash {
 class TransactionHistoryImpl;
 class PendingTransactionImpl;
 class UnsignedTransactionImpl;
@@ -225,8 +225,6 @@ private:
 
 
 } // namespace
-
-namespace Bitmonero = Monero;
 
 #endif
 

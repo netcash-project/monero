@@ -35,7 +35,7 @@
 #include <vector>
 
 
-namespace Monero {
+namespace Netcash {
 
 class WalletImpl;
 class PendingTransactionImpl : public PendingTransaction
@@ -66,5 +66,3 @@ private:
 
 
 }
-
-namespace Bitmonero = Monero;

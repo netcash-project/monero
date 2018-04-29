@@ -33,7 +33,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace Netcash {
 
 TransactionInfo::~TransactionInfo() {}
 
@@ -139,5 +139,3 @@ uint64_t TransactionInfoImpl::unlockTime() const
 }
 
 } // namespace
-
-namespace Bitmonero = Monero;

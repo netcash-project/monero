@@ -37,7 +37,7 @@
 
 #include <vector>
 
-namespace Monero {
+namespace Netcash {
   
 AddressBook::~AddressBook() {}
   
@@ -177,5 +177,3 @@ AddressBookImpl::~AddressBookImpl()
 }
 
 } // namespace
-
-namespace Bitmonero = Monero;

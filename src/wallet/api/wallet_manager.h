@@ -32,7 +32,7 @@
 #include "wallet/api/wallet2_api.h"
 #include <string>
 
-namespace Monero {
+namespace Netcash {
 
 class WalletManagerImpl : public WalletManager
 {
@@ -88,5 +88,3 @@ private:
 };
 
 } // namespace
-
-namespace Bitmonero = Monero;

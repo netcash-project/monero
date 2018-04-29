@@ -84,6 +84,9 @@ local.properties
 .settings/
 .loadpath
 
+### Visual Studio ###
+.vs/
+
 # External tool builders
 .externalToolBuilders/
 

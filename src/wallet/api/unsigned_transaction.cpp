@@ -42,7 +42,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace Netcash {
 
 UnsignedTransaction::~UnsignedTransaction() {}
 
@@ -316,6 +316,3 @@ uint64_t UnsignedTransactionImpl::minMixinCount() const
 }
 
 } // namespace
-
-namespace Bitmonero = Monero;
-

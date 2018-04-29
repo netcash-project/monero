@@ -35,7 +35,7 @@
 #include <vector>
 
 
-namespace Monero {
+namespace Netcash {
 
 class WalletImpl;
 class UnsignedTransactionImpl : public UnsignedTransaction
@@ -72,5 +72,3 @@ private:
 
 
 }
-
-namespace Bitmonero = Monero;

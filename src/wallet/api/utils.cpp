@@ -35,7 +35,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace Netcash {
 namespace Utils {
 
 bool isAddressLocal(const std::string &address)
@@ -57,5 +57,3 @@ void onStartup()
 
 
 } // namespace
-
-namespace Bitmonero = Monero;
